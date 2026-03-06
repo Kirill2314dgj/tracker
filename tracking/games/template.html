@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game | Roblox Tracker</title>
+  <link rel="stylesheet" href="/tracking/assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header glass">
+    <a class="brand" href="/tracking/home/">🎮 Roblox Tracker</a>
+    <div class="header-actions">
+      <a class="btn ghost" href="/tracking/home/">Home</a>
+      <button id="themeToggle" class="btn ghost">🌙</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="game-layout glass" id="gamePage">
+      <div class="slider-wrap">
+        <div id="slider" class="slider"></div>
+      </div>
+
+      <div>
+        <h1 id="gameTitle">Loading...</h1>
+        <p id="gameDescription" class="muted"></p>
+        <p class="muted"><span>Owner:</span> <strong id="gameOwner"></strong></p>
+
+        <div class="stats-grid compact" id="gameStats"></div>
+
+        <div class="meta-list">
+          <p><span>Genre:</span> <strong id="gameGenre">-</strong></p>
+          <p><span>Subgenre:</span> <strong id="gameSubgenre">-</strong></p>
+          <p><span>Created:</span> <strong id="createdDate">-</strong></p>
+          <p><span>Updated:</span> <strong id="updatedDate">-</strong></p>
+        </div>
+
+        <a id="playNow" class="btn primary" target="_blank" rel="noopener">Play Now</a>
+      </div>
+    </section>
+
+    <section class="glass">
+      <h2>Activity (24h)</h2>
+      <canvas id="activityChart" height="120"></canvas>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/tracking/assets/js/site.js"></script>
+</body>
+</html>
