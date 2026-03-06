@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Roblox Tracker</title>
+  <link rel="stylesheet" href="/tracking/assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header glass">
+    <a class="brand" href="/tracking/home/">🎮 Roblox Tracker</a>
+    <div class="header-actions">
+      <button id="langToggle" class="btn ghost">RU</button>
+      <button id="themeToggle" class="btn ghost">🌙</button>
+      <a class="btn primary" href="/tracking/request-a-game/" data-i18n="requestGame">Request a Game</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero glass">
+      <h1 data-i18n="heroTitle">Automatic Roblox Game Tracking</h1>
+      <p data-i18n="heroSubtitle">Live data, beautiful stats, and active communities in one place.</p>
+    </section>
+
+    <section class="stats-grid">
+      <article class="stat-card glass">
+        <span data-i18n="trackedGames">Tracked Games</span>
+        <strong id="trackedGames">0</strong>
+      </article>
+      <article class="stat-card glass">
+        <span data-i18n="communities">Communities</span>
+        <strong id="trackedCommunities">0</strong>
+      </article>
+      <article class="stat-card glass">
+        <span data-i18n="activePlayers">Active Players</span>
+        <strong id="activePlayers">0</strong>
+      </article>
+      <article class="stat-card glass">
+        <span data-i18n="totalVisits">Total Visits</span>
+        <strong id="totalVisits">0</strong>
+      </article>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2 data-i18n="games">Games</h2>
+        <select id="sortGames" class="select">
+          <option value="players" data-i18n="sortPlayers">Sort by Players</option>
+          <option value="visits" data-i18n="sortVisits">Sort by Visits</option>
+          <option value="favorites" data-i18n="sortFavorites">Sort by Favorites</option>
+        </select>
+      </div>
+      <div id="gamesGrid" class="grid cards-grid"></div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2 data-i18n="communities">Communities</h2>
+      </div>
+      <div id="communitiesGrid" class="grid cards-grid"></div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2 data-i18n="recentGames">Recently Added</h2>
+      </div>
+      <div id="recentGames" class="grid cards-grid"></div>
+    </section>
+  </main>
+
+  <script src="/tracking/assets/js/site.js"></script>
+</body>
+</html>

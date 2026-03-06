@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request a Game | Roblox Tracker</title>
+  <link rel="stylesheet" href="/tracking/assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header glass">
+    <a class="brand" href="/tracking/home/">🎮 Roblox Tracker</a>
+    <div class="header-actions">
+      <a class="btn ghost" href="/tracking/home/">Home</a>
+      <button id="themeToggle" class="btn ghost">🌙</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="glass form-card">
+      <h1>Request a Roblox Game</h1>
+      <form id="requestForm" class="request-form">
+        <div class="grid two">
+          <label>First Name<input name="firstName" required /></label>
+          <label>Last Name<input name="lastName" required /></label>
+        </div>
+        <div class="grid two">
+          <label>Email<input type="email" name="email" required /></label>
+          <label>Roblox Username<input name="robloxUsername" required /></label>
+        </div>
+        <div class="grid two">
+          <label>Game ID / URL<input name="gameInput" required /></label>
+          <label>Universe ID (optional)<input name="universeId" /></label>
+        </div>
+        <label>Game Name<input name="gameName" required /></label>
+        <label>Reason<textarea name="reason" rows="5" required></textarea></label>
+        <button class="btn primary" type="submit">Submit Request</button>
+      </form>
+      <p id="formStatus" class="form-status hidden"></p>
+    </section>
+  </main>
+
+  <script src="/tracking/assets/js/site.js"></script>
+</body>
+</html>
